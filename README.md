@@ -1,7 +1,9 @@
-Neon Morning Brackets Theme - 1.0.0
+Neon Morning Brackets Theme - 1.0.1
 =========
 
 Like [Neon](https://github.com/dustindowell22/neon-brackets-theme), but more upbeat and happy.
+
+Screenshots are from 1.0.0
 
 ## HTML
 ![HTML](https://github.com/dustindowell22/neon-morning-brackets-theme/blob/master/preview/morn-html.png)
