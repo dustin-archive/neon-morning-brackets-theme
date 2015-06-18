@@ -1,0 +1,17 @@
+{
+  "name": "dustindowell.neon-morning",
+  "title": "Neon Morning",
+  "description": "Like Neon, but more upbeat and happy. Themed Code Folding and CSS Color Preview.",
+  "homepage": "https://github.com/dustindowell22/neon-morning-brackets-theme",
+  "version": "1.0.0",
+  "author": "Dustin Dowell (https://github.com/dustindowell22)",
+  "license": "MIT",
+  "theme": {
+    "file": "theme.less",
+    "dark": true
+  },
+  "engines": {
+    "brackets": ">=1.0.0"
+  },
+  "keywords": ["theme", "neon", "morning", "dark"]
+}
