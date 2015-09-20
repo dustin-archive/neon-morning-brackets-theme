@@ -1,64 +1,31 @@
-// Neon Morning Brackets Theme - 1.0.1
-// June 18, 2015
+// Neon Morning Brackets Theme - 1.1.0
+// September 20, 2015
 // The MIT License (MIT)
 // Copyright (c) 2015 Dustin Dowell
 // github.com/dustindowell22/neon-morning-brackets-theme
-// =============================================
+// =============================================================================
 
 
 //
 // + Colors
 // =============================================
 
-@green-1:      rgba(  0, 255,   0, 0.875);
-@green-2:      rgba( 63, 255,   0, 0.875);
-@chartreuse-1: rgba(127, 255,   0, 0.875);
-@chartreuse-2: rgba(191, 255,   0, 0.875);
-@yellow-1:     rgba(255, 255,   0, 0.875);
-@yellow-2:     rgba(255, 191,   0, 0.875);
-@orange-1:     rgba(255, 127,   0, 0.875);
-@orange-2:     rgba(255,  63,   0, 0.875);
-@red-1:        rgba(255,   0,   0, 0.875);
-@red-2:        rgba(255,   0,  63, 0.875);
-@pink-1:       rgba(255,   0, 127, 0.875);
-@pink-2:       rgba(255,   0, 191, 0.875);
-@magenta-1:    rgba(255,   0, 255, 0.875);
-@magenta-2:    rgba(191,   0, 255, 0.875);
-@purple-1:     rgba(127,   0, 255, 0.875);
-@purple-2:     rgba( 63,   0, 255, 0.875);
-@blue-1:       rgba(  0,   0, 255, 0.875);
-@blue-2:       rgba(  0,  63, 255, 0.875);
-@celeste-1:    rgba(  0, 127, 255, 0.875);
-@celeste-2:    rgba(  0, 191, 255, 0.875);
-@cyan-1:       rgba(  0, 255, 255, 0.875);
-@cyan-2:       rgba(  0, 255, 191, 0.875);
-@seafoam-1:    rgba(  0, 255, 127, 0.875);
-@seafoam-2:    rgba(  0, 255,  63, 0.875);
+@chartreuse: rgba(175, 247,  47, (7 / 8));
+@orange:     rgba(255, 175,  31, (7 / 8));
+@red:        rgba(255,  63,  95, (7 / 8));
+@pink:       rgba(255,  79, 143, (7 / 8));
+@blue:       rgba( 47, 159, 255, (7 / 8));
+@celeste:    rgba(  0, 223, 255, (7 / 8));
 
-@neon-chartreuse: mix(#000,       @chartreuse-1, 25% * 0.375);
-@neon-orange:     mix(#FFF,       @orange-1,     25% * 0.500);
-@neon-red:        mix(#FFF,       @red-2,        25% * 0.750);
-@neon-pink:       mix(#FFF,       @pink-1,       25% * 1.250);
-@neon-blue:       mix(@blue-2,    @celeste-1,    25% * 0.750);
-@neon-celeste:    mix(@celeste-2, @cyan-1,       25% * 3.000);
+@opaque-1: rgba(255, 255, 255, (5 / 8));
+@opaque-2: rgba(255, 255, 255, (3 / 8));
+@opaque-3: rgba(255, 255, 255, (1 / 8));
 
-@coffee-chartreuse: mix(@neon-chartreuse, @yellow-1,  50%);
-@coffee-orange:     mix(@neon-orange,     @yellow-1,  75%);
-@coffee-red:        mix(@neon-red,        @red-1,     75%);
-@coffee-pink:       mix(@neon-pink,       @red-1,     75%);
-@coffee-blue:       mix(@neon-blue,       @cyan-1,    75%);
-@coffee-celeste:    mix(@neon-celeste,    @cyan-1,    50%);
-
-@opaque-1: rgba(255, 255, 255, (4   / 6));
-@opaque-2: rgba(255, 255, 255, (2   / 6));
-@opaque-3: rgba(255, 255, 255, (1   / 6));
-@opaque-4: rgba(255, 255, 255, (0.5 / 6));
-
-@gray: rgb(35, 34, 35);
+@gray: rgb(39, 39, 39);
 
 //
 // + Brackets
-// =============================================
+// =============================================================================
 
 .CodeMirror-linenumber {                        // Gutter line number
   padding: 0 1.5em 0 0.5em;
@@ -75,19 +42,19 @@
 }
 
 .CodeMirror-matchingtag {                       // Matching selected HTML tags
-  background-color: @opaque-4;
+  background-color: @opaque-3;
 }
 
 .CodeMirror-matchingbracket {                   // Matching selected curly brackets
   color: @opaque-1 !important;
-  background-color: @opaque-4;
+  background-color: @opaque-3;
 }
 
 .CodeMirror-selected,                           // Selected text
 .CodeMirror-activeline .CodeMirror-gutter-elt,  // Gutter active line
 .CodeMirror-activeline-background {             // Active line
   color: @opaque-1;
-  background-color: @opaque-4;
+  background-color: @opaque-3;
 }
 
 .CodeMirror-cursor {                            // Cursor
@@ -96,7 +63,7 @@
 
 //
 // + Syntax
-// =============================================
+// =============================================================================
 
 .cm-operator {
   color: @opaque-1;
@@ -110,7 +77,7 @@
 .cm-atom,                                       // Function names and property values
 .cm-keyword,                                    // Flags and some (but not all) property values
 .cm-string {                                    // Quotes
-  color: @coffee-pink;
+  color: @pink;
 }
 
 .cm-attribute,                                  // HTML attributes
@@ -120,23 +87,23 @@
 .cm-property,                                   // Properties
 .cm-string-2,
 .cm-variable {                                  // Variables
-  color: @coffee-celeste;
+  color: @celeste;
 }
 
 .cm-meta,                                       // Vender prefixes
 .cm-number {                                    // Numbers
-  color: @coffee-blue;
+  color: @blue;
 }
 
 .cm-builtin,                                    // ID Selector
 .cm-bracket,                                    // Carrets
 .cm-tag,                                        // HTML tag and function names after @include
 .cm-qualifier {                                 // Class selectors
-  color: @coffee-chartreuse;
+  color: @chartreuse;
 }
 
 .cm-variable-2 {
-  color: @coffee-orange;
+  color: @orange;
 }
 
 .cm-variable-3,                                 // Pseudo elements
@@ -144,18 +111,18 @@
 .cm-minus,
 .cm-plus,
 .cm-quote {
-  color: @coffee-red;
+  color: @red;
 }
 
 .cm-link,
 .cm-rangeinfo {
   text-decoration: none;
-  color: @coffee-chartreuse;
+  color: @chartreuse;
 }
 
 //
 // + Code Folding
-// =============================================
+// =============================================================================
 
 .CodeMirror-foldgutter {
   width: 2em;
@@ -195,7 +162,7 @@
 
 //
 // + CSS Color Preview
-// =============================================
+// =============================================================================
 
 .ico-cssColorPreview {
   display: block;
